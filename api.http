@@ -1,0 +1,62 @@
+###
+GET http://localhost:3000/api/todos HTTP/1.1
+
+###
+POST http://localhost:3000/api/todos HTTP/1.1
+content-type: application/json
+
+{
+    "id": "10",
+    "title": "Newly created from the API",
+    "completed": false,
+    "createdAt": "2024-04-25T07:05:20.725Z",
+    "updatedAt": "2024-04-25T07:05:20.725Z",
+    "priority": false,
+    "subTodos": []
+}
+
+###
+POST http://localhost:3000/api/todos/10 HTTP/1.1
+content-type: application/json
+
+{
+    "id": "11",
+    "title": "Newly created sub todo from the API",
+    "completed": false,
+    "createdAt": "2024-04-25T07:05:20.725Z",
+    "updatedAt": "2024-04-25T07:05:20.725Z",
+    "priority": false,
+    "subTodos": []
+}
+
+###
+PATCH http://localhost:3000/api/todos/10 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Newly created just got updated from the API",
+    "updatedAt": "2024-04-25T07:05:20.725Z"
+}
+
+###
+PATCH http://localhost:3000/api/todos HTTP/1.1
+content-type: application/json
+
+{
+    "data": [
+        {
+          "id": "10",
+          "title": "Updated from batch",
+          "completed": true
+        },
+        {
+          "id": "11",
+          "title": "Updated from batch too",
+          "completed": true
+        }
+    ]
+}
+
+
+###
+DELETE http://localhost:3000/api/todos/10 HTTP/1.1

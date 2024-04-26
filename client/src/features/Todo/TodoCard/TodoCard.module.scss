@@ -1,0 +1,14 @@
+@import "../../../variables";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 540px;
+  background: $card-background;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: $card-shadow;
+}

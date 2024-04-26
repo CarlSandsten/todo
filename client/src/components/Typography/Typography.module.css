@@ -1,0 +1,19 @@
+.heading {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.subHeading {
+  font-size: 19px;
+}
+
+@media screen and (min-width: 600px) {
+  .heading {
+    font-size: 30px;
+  }
+
+  .subHeading {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,24 @@
+@import "animations";
+
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+// Colors
+$app-background: linear-gradient(45deg, #151617, #1a1f25);
+$card-background: linear-gradient(45deg, #131516, #252a30);
+$add-todo-button-background: linear-gradient(45deg, #468cf4, #58c339);
+$add-sub-todo-button-background: linear-gradient(45deg, #468cf4, #58c339);
+$done-button-background: linear-gradient(45deg, #46f448, #d0ff49);
+$priority-button-background: linear-gradient(45deg, #ffb95b, #6bdb5c);
+$low-priority-button-background: linear-gradient(45deg, #ff5bb2, #957dff);
+$edit-button-background: linear-gradient(45deg, #5b7dff, #51cf30);
+$cancel-button-background: linear-gradient(45deg, #ff9800, #cfff4c);
+$save-button-background: linear-gradient(45deg, #f4e146, #8acf30);
+$move-button-background: linear-gradient(45deg, #4687f4, #39c36d);
+$delete-button-background: linear-gradient(45deg, #f44669, #f4b546);
+
+// Shadows
+$card-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.3);
+
+// Animations
+$round-button-shake: 0.75s shakeLittle ease-in-out;
